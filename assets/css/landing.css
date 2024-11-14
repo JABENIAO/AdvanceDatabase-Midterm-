@@ -1,0 +1,86 @@
+/* General styling for the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://imgs.search.brave.com/T49EUVlXttfbrpPH32MPYCq1MxCTMfik7Yb25w5_erk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9yMEljTlli/LmpwZw') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Styling for the page title (h1) */
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Table styles with blurred background effect */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px); /* Blur effect */
+    border-radius: 15px;
+    border: none;
+}
+
+/* Table headers styling */
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #fff;
+}
+
+/* Header styling with a frosted glass effect */
+th {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Row styling */
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Styling for links (e.g., logout button) */
+a[href="assets/database/logout.php"] {
+    display: inline-block;
+    margin: 20px;
+    padding: 12px 25px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for the logout button */
+a[href="assets/database/logout.php"]:hover {
+    background-color: #ff4c4c;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
